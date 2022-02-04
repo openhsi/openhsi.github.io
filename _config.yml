@@ -1,0 +1,46 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+
+title: OpenHSI
+description: Homepage to the open-source hyperspectral imager
+github_username: openhsi
+
+# Email and twitter are optional:
+email: <yiwei.mao@sydney.edu.aum>
+twitter_username: 
+
+# Set this to true to get LaTeX math equation support
+use_math: true
+
+# Add your Google Analytics ID here if you have one and want to use it
+google_analytics: 61578211
+
+# Everything below here can be ignored, unless you want to change the theme entirely
+logo: /images/openhsi_logo_trans.png
+theme: jekyll-theme-minimal
+remote_theme: pages-themes/minimal@v0.2.0
+plugins:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-octicons
+  - jekyll-github-metadata
+  - jekyll-remote-theme # add this line to the plugins list if you already have one
+
+titles_from_headings:
+  enabled:     true
+  strip_title: true
+  collections: true
+
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  math_engine: katex
+  input: GFM
+  auto_ids: true
+  hard_wrap: false
+  syntax_highlighter: rouge
